@@ -24,6 +24,7 @@ const protect = async (req, res, next) => {
         }
         // Exclude password
         const { password, ...userWithoutPassword } = memoryUser;
+        userWithoutPassword.id = userWithoutPassword._id; // FIX: Ensure .id exists for in-memory objects just like Mongoose documents
         req.user = userWithoutPassword;
       } else {
         // Get user from MongoDB
