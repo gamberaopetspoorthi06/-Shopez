@@ -17,7 +17,7 @@ const Navbar = ({ user, onLogout }) => {
     <nav style={styles.nav}>
       <div style={styles.container}>
         <Link to="/" style={styles.logo}>
-          <TrendingUp size={24} color="#00ff88" />
+          <TrendingUp size={24} color="#111827" />
           <span style={styles.logoText}>StockBridge</span>
         </Link>
 
@@ -50,7 +50,7 @@ const Navbar = ({ user, onLogout }) => {
                   style={{
                     ...styles.link,
                     ...(isActive('/admin') ? styles.activeLink : {}),
-                    color: '#00bfff'
+                    color: '#2563eb'
                   }}
                 >
                   <ShieldAlert size={18} />
@@ -87,7 +87,7 @@ const Navbar = ({ user, onLogout }) => {
         {user && (
           <div style={styles.userSection}>
             <div style={styles.balanceCard}>
-              <Wallet size={16} color="#00ff88" />
+              <Wallet size={16} color="#111827" />
               <span style={styles.balanceLabel}>Cash:</span>
               <span style={styles.balanceValue}>
                 ${parseFloat(user.cashBalance).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
@@ -106,9 +106,9 @@ const Navbar = ({ user, onLogout }) => {
 
 const styles = {
   nav: {
-    background: 'rgba(13, 17, 36, 0.7)',
-    backdropFilter: 'blur(20px)',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+    background: '#ffffff',
+    backdropFilter: 'none',
+    borderBottom: '1px solid #e5e7eb',
     position: 'sticky',
     top: 0,
     zIndex: 1000,
@@ -133,11 +133,11 @@ const styles = {
     fontFamily: 'Outfit, sans-serif',
     fontSize: '1.4rem',
     fontWeight: 800,
-    color: '#ffffff',
+    color: '#111827',
     letterSpacing: '-0.03em',
   },
   logoSub: {
-    color: '#00ff88',
+    color: '#111827',
     fontWeight: 400,
   },
   navLinks: {
@@ -149,7 +149,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
-    color: '#9ca3af',
+    color: '#6b7280',
     textDecoration: 'none',
     fontSize: '0.95rem',
     fontWeight: 500,
@@ -159,8 +159,8 @@ const styles = {
     transition: 'all 0.2s ease',
   },
   activeLink: {
-    color: '#00ff88',
-    background: 'rgba(0, 255, 136, 0.08)',
+    color: '#111827',
+    background: '#f3f4f6',
   },
   userSection: {
     display: 'flex',
@@ -171,32 +171,32 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
-    background: 'rgba(0, 0, 0, 0.3)',
-    border: '1px solid rgba(255, 255, 255, 0.06)',
+    background: '#f9fafb',
+    border: '1px solid #e5e7eb',
     padding: '6px 12px',
-    borderRadius: '10px',
+    borderRadius: '2px',
   },
   balanceLabel: {
     fontSize: '0.8rem',
-    color: '#9ca3af',
+    color: '#6b7280',
     textTransform: 'uppercase',
     fontWeight: 600,
   },
   balanceValue: {
     fontSize: '0.95rem',
-    color: '#00ff88',
+    color: '#111827',
     fontWeight: 700,
     fontFamily: 'Outfit, sans-serif',
   },
   username: {
-    color: '#ffffff',
+    color: '#111827',
     fontSize: '0.9rem',
     fontWeight: 500,
   },
   logoutBtn: {
     background: 'transparent',
     border: 'none',
-    color: '#9ca3af',
+    color: '#6b7280',
     cursor: 'pointer',
     padding: '6px',
     borderRadius: '6px',

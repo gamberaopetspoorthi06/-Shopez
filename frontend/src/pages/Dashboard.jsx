@@ -208,8 +208,8 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: '24px',
-    background: '#000000',
-    border: '1px solid #333333',
+    background: '#ffffff',
+    border: '1px solid var(--border-glass)',
     borderRadius: '2px',
     padding: '24px',
     flexWrap: 'wrap',
@@ -222,7 +222,7 @@ const styles = {
   welcomeText: {
     fontFamily: 'Outfit, sans-serif',
     fontSize: '2rem',
-    color: '#ffffff',
+    color: 'var(--text-main)',
     fontWeight: 800,
   },
   welcomeSub: {
@@ -232,8 +232,8 @@ const styles = {
   },
   statsContainer: {
     display: 'flex',
-    background: '#111111',
-    border: '1px solid #333333',
+    background: 'var(--bg-card)',
+    border: '1px solid var(--border-glass)',
     borderRadius: '2px',
     padding: '8px',
     flexWrap: 'wrap',
@@ -254,7 +254,7 @@ const styles = {
   statCardVal: {
     fontSize: '1.3rem',
     fontWeight: 800,
-    color: '#ffffff',
+    color: 'var(--text-main)',
     fontFamily: 'Outfit, sans-serif',
     marginTop: '4px',
   },
@@ -266,8 +266,8 @@ const styles = {
   },
   moverBoard: {
     padding: '16px 20px',
-    background: '#111111',
-    border: '1px solid #333333',
+    background: 'var(--bg-card)',
+    border: '1px solid var(--border-glass)',
     borderRadius: '2px',
   },
   boardHeader: {
@@ -281,7 +281,7 @@ const styles = {
   boardTitle: {
     fontSize: '1.05rem',
     fontWeight: 600,
-    color: '#ffffff',
+    color: 'var(--text-main)',
   },
   moverList: {
     display: 'flex',
@@ -300,7 +300,7 @@ const styles = {
   },
   moverSymbol: {
     fontWeight: 700,
-    color: '#ffffff',
+    color: 'var(--text-main)',
     width: '60px',
   },
   moverPrice: {
@@ -364,7 +364,7 @@ const styles = {
   },
   emptyTitle: {
     fontSize: '1.4rem',
-    color: '#ffffff',
+    color: 'var(--text-main)',
     marginTop: '16px',
   },
   emptyText: {

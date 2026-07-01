@@ -1,28 +1,28 @@
 /* ShopEZ Neon Cyber-Glass Design System */
 
 :root {
-  --bg-dark: #000000;
-  --bg-card: #111111;
-  --bg-glass: rgba(17, 17, 17, 0.9);
-  --border-glass: #333333;
-  --border-glass-active: #ffffff;
+  --bg-dark: #f9fafb;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  --border-glass: #e5e7eb;
+  --border-glass-active: #111827;
   
-  --primary: #ffffff;
+  --primary: #111827;
   --primary-glow: transparent;
-  --secondary: #cccccc;
+  --secondary: #4b5563;
   --danger: #ef4444;
   --danger-glow: transparent;
-  --warning: #ffaa00;
+  --warning: #f59e0b;
   
-  --text-main: #ffffff;
-  --text-muted: #888888;
-  --text-dark: #555555;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --text-dark: #374151;
   
   --font-display: 'Outfit', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   
   --shadow-glow: none;
-  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.8);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-inset: none;
 }
 
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background: var(--primary);
-  color: #070913;
+  color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
 }
 .btn-primary:hover {
@@ -221,11 +221,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-input {
   width: 100%;
-  background: rgba(0, 0, 0, 0.25);
+  background: #ffffff;
   border: 1px solid var(--border-glass);
+  border-radius: 2px;
   color: var(--text-main);
   padding: 12px 16px;
-  border-radius: 2px;
   font-family: var(--font-body);
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -243,38 +243,30 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: auto;
   border-radius: 2px;
   border: 1px solid var(--border-glass);
-  background: rgba(0, 0, 0, 0.15);
+  background: #ffffff;
 }
 
-.premium-table {
-  width: 100%;
-  border-collapse: collapse;
+.data-table th, .data-table td {
+  padding: 16px 20px;
   text-align: left;
+  border-bottom: 1px solid var(--border-glass);
 }
 
-.premium-table th {
-  background: rgba(255, 255, 255, 0.03);
-  font-family: var(--font-display);
+.data-table th {
+  background: #f3f4f6;
+  font-weight: 600;
   color: var(--text-muted);
-  font-weight: 500;
-  padding: 16px;
-  font-size: 0.85rem;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--border-glass);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
 }
 
-.premium-table td {
-  padding: 16px;
-  border-bottom: 1px solid var(--border-glass);
-  font-size: 0.95rem;
+.data-table tbody tr {
+  transition: background 0.2s;
 }
 
-.premium-table tr:last-child td {
-  border-bottom: none;
-}
-
-.premium-table tr:hover td {
-  background: rgba(255, 255, 255, 0.015);
+.data-table tbody tr:hover {
+  background: #f9fafb;
 }
 
 /* Key Stats Layouts */

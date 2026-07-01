@@ -42,7 +42,7 @@ const Login = ({ onLoginSuccess }) => {
       <div style={styles.cardContainer}>
         {/* Brand */}
         <div style={styles.brand}>
-          <TrendingUp size={36} color="#00ff88" />
+          <TrendingUp size={36} color="#111827" />
           <h2 style={styles.brandTitle}>StockBridge</h2>
           <p style={styles.brandSubtitle}>Welcome back. Sign in to continue your trading journey.</p>
         </div>
@@ -143,7 +143,7 @@ const styles = {
     letterSpacing: '-0.03em',
   },
   brandSub: {
-    color: '#00ff88',
+    color: '#111827',
     fontWeight: 400,
   },
   brandTagline: {
@@ -206,7 +206,7 @@ const styles = {
     color: '#9ca3af',
   },
   link: {
-    color: '#00ff88',
+    color: '#111827',
     textDecoration: 'none',
     fontWeight: 600,
   },
