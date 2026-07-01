@@ -268,7 +268,7 @@ const styles = {
   pageTitle: {
     fontFamily: 'Outfit, sans-serif',
     fontSize: '2rem',
-    color: '#ffffff',
+    color: '#000000',
     fontWeight: 800,
   },
   refreshBtn: {
