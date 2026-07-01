@@ -31,7 +31,10 @@ const StockRow = ({ stock }) => {
       <td style={{ fontWeight: 700, color: 'var(--text-main)' }}>{stock.symbol}</td>
       <td style={{ color: 'var(--text-muted)' }}>{stock.name}</td>
       <td style={{ textAlign: 'right' }}>
-        <span className={`mono-price ${pulseClass}`}>
+        <span 
+          className={`mono-price ${pulseClass}`}
+          style={{ color: isPositive ? '#16a34a' : '#dc2626', fontWeight: 700 }}
+        >
           ${stock.currentPrice.toFixed(2)}
         </span>
       </td>
