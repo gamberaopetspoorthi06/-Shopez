@@ -14,9 +14,9 @@
   --danger-glow: transparent;
   --warning: #f59e0b;
   
-  --text-main: #111827;
-  --text-muted: #6b7280;
-  --text-dark: #374151;
+  --text-main: #000000;
+  --text-muted: #444444;
+  --text-dark: #222222;
   
   --font-display: 'Outfit', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -92,12 +92,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dynamic Text Alerts */
 .text-gain {
-  color: #22c55e;
+  color: #16a34a;
+  font-weight: 700;
   text-shadow: none;
 }
 
 .text-loss {
-  color: #ef4444;
+  color: #dc2626;
+  font-weight: 700;
   text-shadow: none;
 }
 

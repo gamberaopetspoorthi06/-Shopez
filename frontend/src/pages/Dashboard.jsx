@@ -88,7 +88,7 @@ const Dashboard = () => {
           </div>
           <div style={{ ...styles.statCard, borderLeft: '1px solid rgba(255, 255, 255, 0.08)' }}>
             <span style={styles.statCardLabel}>Cash Balance</span>
-            <span style={{ ...styles.statCardVal, color: '#00ff88' }}>${dashboardStats.cashBalance.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
+            <span style={{ ...styles.statCardVal, color: '#16a34a' }}>${dashboardStats.cashBalance.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
           </div>
           <div style={{ ...styles.statCard, borderLeft: '1px solid rgba(255, 255, 255, 0.08)' }}>
             <span style={styles.statCardLabel}>Total Net Worth</span>
@@ -102,7 +102,7 @@ const Dashboard = () => {
         {/* Top Gainers */}
         <div className="glass-panel" style={styles.moverBoard}>
           <div style={styles.boardHeader}>
-            <TrendingUp size={20} color="#00ff88" />
+            <TrendingUp size={20} color="#16a34a" />
             <h3 style={styles.boardTitle}>Top Gainers</h3>
           </div>
           <div style={styles.moverList}>
@@ -111,7 +111,7 @@ const Dashboard = () => {
                 <div key={s.symbol} style={styles.moverItem}>
                   <span style={styles.moverSymbol}>{s.symbol}</span>
                   <span style={styles.moverPrice}>${s.currentPrice.toFixed(2)}</span>
-                  <span style={{ ...styles.moverChange, color: '#00ff88' }}>+{s.changePercent.toFixed(2)}%</span>
+                  <span style={{ ...styles.moverChange, color: '#16a34a' }}>+{s.changePercent.toFixed(2)}%</span>
                 </div>
               ))
             ) : (
@@ -123,7 +123,7 @@ const Dashboard = () => {
         {/* Top Losers */}
         <div className="glass-panel" style={styles.moverBoard}>
           <div style={styles.boardHeader}>
-            <TrendingDown size={20} color="#ff0055" />
+            <TrendingDown size={20} color="#dc2626" />
             <h3 style={styles.boardTitle}>Top Losers</h3>
           </div>
           <div style={styles.moverList}>
@@ -132,7 +132,7 @@ const Dashboard = () => {
                 <div key={s.symbol} style={styles.moverItem}>
                   <span style={styles.moverSymbol}>{s.symbol}</span>
                   <span style={styles.moverPrice}>${s.currentPrice.toFixed(2)}</span>
-                  <span style={{ ...styles.moverChange, color: '#ff0055' }}>{s.changePercent.toFixed(2)}%</span>
+                  <span style={{ ...styles.moverChange, color: '#dc2626' }}>{s.changePercent.toFixed(2)}%</span>
                 </div>
               ))
             ) : (
@@ -157,8 +157,8 @@ const Dashboard = () => {
         </div>
         
         <div style={styles.syncIndicator}>
-          {isUpdating && <RefreshCw size={14} className="loading-spinner" style={{ margin: 0, marginRight: '8px', borderTopColor: '#00ff88' }} />}
-          <Activity size={14} color="#00ff88" style={{ marginRight: '6px' }} />
+          {isUpdating && <RefreshCw size={14} className="loading-spinner" style={{ margin: 0, marginRight: '8px', borderTopColor: '#16a34a' }} />}
+          <Activity size={14} color="#16a34a" style={{ marginRight: '6px' }} />
           <span style={styles.syncText}>{isUpdating ? 'Polling prices...' : 'Live price feed synced'}</span>
         </div>
       </div>
@@ -350,7 +350,7 @@ const styles = {
   },
   syncText: {
     fontSize: '0.8rem',
-    color: '#00ff88',
+    color: '#16a34a',
     fontWeight: 600,
     fontFamily: 'Outfit, sans-serif',
   },

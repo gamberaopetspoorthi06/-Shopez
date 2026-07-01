@@ -35,7 +35,7 @@ const StockRow = ({ stock }) => {
           ${stock.currentPrice.toFixed(2)}
         </span>
       </td>
-      <td style={{ textAlign: 'right', color: isPositive ? '#22c55e' : '#ef4444' }} className="mono-price">
+      <td style={{ textAlign: 'right', color: isPositive ? '#16a34a' : '#dc2626', fontWeight: 700 }} className="mono-price">
         {isPositive ? '▲' : '▼'} {Math.abs(stock.change).toFixed(2)} ({isPositive ? '+' : ''}{stock.changePercent.toFixed(2)}%)
       </td>
       <td style={{ textAlign: 'right', color: 'var(--text-muted)' }} className="mono-price">${stock.dailyHigh.toFixed(2)}</td>
