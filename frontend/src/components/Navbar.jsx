@@ -18,7 +18,7 @@ const Navbar = ({ user, onLogout }) => {
       <div style={styles.container}>
         <Link to="/" style={styles.logo}>
           <TrendingUp size={24} color="#00ff88" />
-          <span style={styles.logoText}>ShopEZ <span style={styles.logoSub}>Trader</span></span>
+          <span style={styles.logoText}>StockBridge</span>
         </Link>
 
         <div style={styles.navLinks}>

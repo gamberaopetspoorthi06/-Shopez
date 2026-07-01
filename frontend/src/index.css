@@ -1,29 +1,29 @@
 /* ShopEZ Neon Cyber-Glass Design System */
 
 :root {
-  --bg-dark: #070913;
-  --bg-card: rgba(18, 22, 43, 0.65);
-  --bg-glass: rgba(13, 17, 36, 0.45);
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --border-glass-active: rgba(0, 255, 136, 0.25);
+  --bg-dark: #000000;
+  --bg-card: #111111;
+  --bg-glass: rgba(17, 17, 17, 0.9);
+  --border-glass: #333333;
+  --border-glass-active: #ffffff;
   
-  --primary: #00ff88;
-  --primary-glow: rgba(0, 255, 136, 0.15);
-  --secondary: #00bfff;
-  --danger: #ff0055;
-  --danger-glow: rgba(255, 0, 85, 0.15);
+  --primary: #ffffff;
+  --primary-glow: transparent;
+  --secondary: #cccccc;
+  --danger: #ef4444;
+  --danger-glow: transparent;
   --warning: #ffaa00;
   
-  --text-main: #f3f4f6;
-  --text-muted: #9ca3af;
-  --text-dark: #6b7280;
+  --text-main: #ffffff;
+  --text-muted: #888888;
+  --text-dark: #555555;
   
   --font-display: 'Outfit', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   
-  --shadow-glow: 0 0 25px rgba(0, 255, 136, 0.15);
-  --shadow-card: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
-  --shadow-inset: inset 0 0 12px rgba(255, 255, 255, 0.02);
+  --shadow-glow: none;
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.8);
+  --shadow-inset: none;
 }
 
 * {
@@ -35,10 +35,7 @@
 body {
   font-family: var(--font-body);
   background-color: var(--bg-dark);
-  background-image: 
-    radial-gradient(at 0% 0%, rgba(0, 191, 255, 0.08) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(255, 0, 85, 0.06) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, rgba(0, 255, 136, 0.03) 0px, transparent 50%);
+  background-image: none;
   background-attachment: fixed;
   color: var(--text-main);
   min-height: 100vh;
@@ -95,12 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dynamic Text Alerts */
 .text-gain {
-  color: var(--primary);
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+  color: #22c55e;
+  text-shadow: none;
 }
+
 .text-loss {
-  color: var(--danger);
-  text-shadow: 0 0 10px rgba(255, 0, 85, 0.2);
+  color: #ef4444;
+  text-shadow: none;
 }
 
 /* Main Grid & Responsive Container */

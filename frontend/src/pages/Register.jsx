@@ -56,7 +56,7 @@ const Register = ({ onLoginSuccess }) => {
         {/* Form Panel */}
         <div className="glass-panel" style={styles.panel}>
           <h3 style={styles.formTitle}>Create Account</h3>
-          <p style={styles.formSubtitle}>Join ShopEZ Trader for effortless simulated investing.</p>
+          <p style={styles.formSubtitle}>Join StockBridge for effortless simulated investing.</p>
 
           {errorMsg && <div style={styles.errorAlert}>{errorMsg}</div>}
 

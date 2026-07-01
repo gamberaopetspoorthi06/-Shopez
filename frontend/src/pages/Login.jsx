@@ -43,8 +43,8 @@ const Login = ({ onLoginSuccess }) => {
         {/* Brand */}
         <div style={styles.brand}>
           <TrendingUp size={36} color="#00ff88" />
-          <h2 style={styles.brandTitle}>ShopEZ <span style={styles.brandSub}>Trader</span></h2>
-          <p style={styles.brandTagline}>Effortless investing, real-time results.</p>
+          <h2 style={styles.brandTitle}>StockBridge</h2>
+          <p style={styles.brandSubtitle}>Welcome back. Sign in to continue your trading journey.</p>
         </div>
 
         {/* Form Panel */}
