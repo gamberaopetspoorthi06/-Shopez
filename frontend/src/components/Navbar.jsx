@@ -133,7 +133,7 @@ const styles = {
     fontFamily: 'Outfit, sans-serif',
     fontSize: '1.4rem',
     fontWeight: 800,
-    color: '#111827',
+    color: '#000000',
     letterSpacing: '-0.03em',
   },
   logoSub: {
