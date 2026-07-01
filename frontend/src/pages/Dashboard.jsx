@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { stocksAPI, authAPI } from '../services/api';
-import StockCard from '../components/StockCard';
+import StockRow from '../components/StockRow';
 import { Search, TrendingUp, TrendingDown, RefreshCw, BarChart2, Activity } from 'lucide-react';
 
 const Dashboard = () => {
@@ -163,12 +163,26 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Stock Cards Listing Grid */}
+      {/* Watchlist Data Table */}
       {filteredStocks.length > 0 ? (
-        <div className="grid-4">
-          {filteredStocks.map(stock => (
-            <StockCard key={stock.symbol} stock={stock} />
-          ))}
+        <div className="premium-table-wrapper">
+          <table className="data-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Company Name</th>
+                <th style={{ textAlign: 'right' }}>Price</th>
+                <th style={{ textAlign: 'right' }}>Change</th>
+                <th style={{ textAlign: 'right' }}>High</th>
+                <th style={{ textAlign: 'right' }}>Low</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredStocks.map(stock => (
+                <StockRow key={stock.symbol} stock={stock} />
+              ))}
+            </tbody>
+          </table>
         </div>
       ) : (
         <div className="glass-panel" style={styles.emptyContainer}>

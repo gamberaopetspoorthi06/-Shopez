@@ -346,21 +346,30 @@ h1, h2, h3, h4, h5, h6 {
   to { transform: rotate(360deg); }
 }
 
-/* Pulse glow animation for mock price ticks */
+.mono-price {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+/* Realistic stock ticker flash animations */
 @keyframes price-pulse-up {
-  0% { background: rgba(0, 255, 136, 0.2); }
-  100% { background: transparent; }
+  0% { background-color: rgba(34, 197, 94, 0.8); color: #ffffff; }
+  100% { background-color: transparent; color: #22c55e; }
 }
 
 @keyframes price-pulse-down {
-  0% { background: rgba(255, 0, 85, 0.2); }
-  100% { background: transparent; }
+  0% { background-color: rgba(239, 68, 68, 0.8); color: #ffffff; }
+  100% { background-color: transparent; color: #ef4444; }
 }
 
 .pulse-up {
-  animation: price-pulse-up 1s ease-out;
+  animation: price-pulse-up 800ms ease-out forwards;
+  border-radius: 2px;
+  padding: 2px 4px;
 }
 
 .pulse-down {
-  animation: price-pulse-down 1s ease-out;
+  animation: price-pulse-down 800ms ease-out forwards;
+  border-radius: 2px;
+  padding: 2px 4px;
 }
