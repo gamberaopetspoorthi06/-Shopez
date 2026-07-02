@@ -138,7 +138,7 @@ const styles = {
     fontFamily: 'Outfit, sans-serif',
     fontSize: '2rem',
     fontWeight: 800,
-    color: '#ffffff',
+    color: '#000000',
     marginTop: '10px',
     letterSpacing: '-0.03em',
   },

@@ -183,7 +183,7 @@ const styles = {
     fontSize: '1.4rem',
     fontWeight: 700,
     textAlign: 'center',
-    color: '#ffffff',
+    color: '#000000',
   },
   formSubtitle: {
     fontSize: '0.85rem',
